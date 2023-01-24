@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d8a96c"/>
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="icon" href="./favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+  <title>World's Spot</title>
+</head>
+<body>
+  <a href="#content" class="skip-link" tabindex="0">Skip to content</a>
+  <div class="headerBar">
+    <h1>World's Spot</h1>
+    <div class="headerMenu">
+      <a href="" tabindex="0">Home</a>
+      <span>|</span>
+      <a href="#/favorites" tabindex="0">Favorites</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/fahdin-zikri/" target="_blank" tabindex="0">About Us</a>
+    </div>
+    <div class="headerMenuBurger">
+      <button id="openNav" class="burgerMenu" tabindex="0">☰</button>
+    </div>
+    <div id="myNav" class="overlay">
+      <button class="closeBtn" id="closeNav" tabindex="0" aria-label="Menu">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="121.31px" height="122.876px" viewBox="0 0 121.31 122.876" enable-background="new 0 0 121.31 122.876" xml:space="preserve"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z"/></g></svg>
+      </button>
+      <div class="overlayContent">
+        <a href="" id="link" tabindex="0">Home</a>
+        <a href="#/favorites" id="link" tabindex="0">Favorites</a>
+        <a href="https://www.linkedin.com/in/fahdin-zikri/" target="_blank" tabindex="0">About Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <picture>
+      <source media="(max-width: 390px)" srcset="images/hero-image_4-small.jpg">
+      <source media="(max-width: 570px)" srcset="images/hero-image_4-medium-small.jpg">
+      <source media="(max-width: 720px)" srcset="images/hero-image_4-medium.jpg">
+      <source media="(max-width: 958px)" srcset="images/hero-image_4-medium-large.jpg">
+      <source media="(max-width: 1200px)" srcset="images/hero-image_4-large.jpg">
+      <img src="images/hero-image_4-super-large.jpg" 
+           alt="">
+    </picture>
+  </div>
+  <div id="content" class="content" tabindex="0"></div>
+  <div class="footer">© 2022 World's Spot. All Right Reserved</div>
+</body>
+</html>

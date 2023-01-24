@@ -1,0 +1,127 @@
+@media screen and (min-width: 390px) {
+    .gridList {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 570px) {
+    .headerBar {
+      padding: 5px 10px 5px 15px;
+    }
+    .headerMenu {
+      display: flex;
+    }
+    .headerMenu a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 44px;
+      min-height: 44px;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 0px 10px;
+      color: rgba(0, 0, 0, 0.61);
+    }
+    .headerMenu a:hover {
+      color:rgb(0, 0, 0);
+    }
+    .headerMenuBurger {
+      display: none;
+    }
+    .overlay {
+      display: none;
+    }
+    .gridList {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .detail_container {
+      font-size: 13px;
+    }
+    .detail_container img {
+      height: 260px;
+    }
+    .detail_container .spot_info h3{
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 805px) {
+    .headerBar h1 {
+      font-size: 33px;
+    }
+    .headerMenu a {
+      font-size: 15px;
+      margin: 0px 16px;
+    }
+    .gridList {
+      padding: 30px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .gridItem h5, .gridItem p {
+      padding: 0px 15px;
+    }
+    .spot {
+      padding: 20px 50px;
+    }
+    .detail_container {
+      font-size: 14px;
+    }
+    .detail_container img {
+      height: 340px;
+    }
+    .detail_container .spot_info h3{
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 958px) {
+    .headerMenu a {
+      font-size: 17px;
+      margin: 0px 19px;
+    }
+    .gridItem h5 {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    .gridItem p {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .detail_container {
+      font-size: 16px;
+    }
+    .detail_container img {
+      height: 420px;
+    }
+    .detail_container .spot_info h3{
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .headerBar h1 {
+      font-size: 40px;
+    }
+    .headerMenu a {
+      font-size: 20px;
+    }
+    .gridList {
+      padding: 30px;
+      gap: 25px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .gridItem h5 {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    .gridItem p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .spot {
+      padding: 30px 50px;
+    }
+    .detail_container img {
+      height: 520px;
+    }
+    .detail_container .spot_info h3{
+      font-size: 18px;
+    }
+  }
+  
