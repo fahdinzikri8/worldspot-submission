@@ -17,28 +17,11 @@ fs.readdirSync(target)
         })
         .toFile(path.resolve(
             __dirname,
-            `${destination}/${image.split('.').slice(0, -1).join('.')}-super-large.jpg`),
+            `${destination}/${image.split('.').slice(0, -1).join('.')}-large.jpg`),
         );
-        sharp(`${target}/${image}`)
-          .resize(1200, 490, {
-            fit: 'cover',
-          })
-          .toFile(path.resolve(
-              __dirname,
-              `${destination}/${image.split('.').slice(0, -1).join('.')}-large.jpg`),
-          );
- 
-        sharp(`${target}/${image}`)
-          .resize(958, 380, {
-            fit: 'cover',
-          })
-          .toFile(path.resolve(
-              __dirname,
-              `${destination}/${image.split('.').slice(0, -1).join('.')}-medium-large.jpg`),
-          );
 
         sharp(`${target}/${image}`)
-          .resize(720, 350, {
+          .resize(958, 380, {
             fit: 'cover',
           })
           .toFile(path.resolve(
@@ -52,15 +35,6 @@ fs.readdirSync(target)
           })
           .toFile(path.resolve(
               __dirname,
-              `${destination}/${image.split('.').slice(0, -1).join('.')}-medium-small.jpg`),
-          );
-
-        sharp(`${target}/${image}`)
-          .resize(390, 200, {
-            fit: 'cover',
-          })
-          .toFile(path.resolve(
-              __dirname,
-              `${destination}/${image.split('.').slice(0, -1).join('.')}-small.jpg`),
+              `${destination}/${image.split('.').slice(0, -1).join('.')}small.jpg`),
           );
     });
