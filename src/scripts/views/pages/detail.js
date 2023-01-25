@@ -25,7 +25,6 @@ const DETAIL = {
         ...spot,
       },
     });
-    console.log(spot)
   },
 };
 
