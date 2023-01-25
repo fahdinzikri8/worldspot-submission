@@ -4,7 +4,7 @@ const LikeButtonPresenter = {
   async init({ likeButtonContainer, favoriteSpot, spot }) {
     this.likeButtonContainer = likeButtonContainer;
     this.spot = spot;
-    this._favoriteSpot = favoriteSpot;
+    this.favoriteSpot = favoriteSpot;
 
     await this.renderButton();
   },
@@ -20,7 +20,7 @@ const LikeButtonPresenter = {
   },
 
   async isSpotExist(id) {
-    const spot = await this._favoriteSpot.getSpot(id);
+    const spot = await this.favoriteSpot.getSpot(id);
     return !!spot;
   },
 
@@ -29,7 +29,7 @@ const LikeButtonPresenter = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await this._favoriteSpot.putSpot(this.spot);
+      await this.favoriteSpot.putSpot(this.spot);
       this.renderButton();
     });
   },
@@ -39,7 +39,7 @@ const LikeButtonPresenter = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await this._favoriteSpot.deleteSpot(this.spot.id);
+      await this.favoriteSpot.deleteSpot(this.spot.id);
       this.renderButton();
     });
   },

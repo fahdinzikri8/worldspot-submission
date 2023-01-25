@@ -68,7 +68,7 @@ const createSpotItemTemplate = (item) => `
         </div>
         <span aria-label="rating ${item.rating}.">(${item.rating})</span>
         </div>
-        <h5><a href="/#/detail/${item.id}">${item.name}</a></h5>
+        <h2><a href="/#/detail/${item.id}">${item.name}</a></h2>
         <p>${item.description}</p>
     </div>
 `;
