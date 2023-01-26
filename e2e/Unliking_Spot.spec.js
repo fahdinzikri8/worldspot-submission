@@ -11,7 +11,7 @@ Scenario('Unliking a resto', ({I}) => {
     I.waitForElement('.gridList', 10)
     I.seeElement('.gridList')
     I.seeElement('.gridItem')
-    I.click('.gridItem')
+    I.click('.gridItem a')
 
     I.waitForElement('#likeButton', 10)
     I.seeElement('#likeButton')

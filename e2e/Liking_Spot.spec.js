@@ -8,7 +8,7 @@ Scenario('Liking a spot', async ({ I }) => {
     I.waitForElement('.gridItem', 10)
     I.seeElement('.gridItem')
     const firstRestoName = await I.grabTextFrom(locate('.gridItem').first())
-    I.click(locate('.gridItem').first())
+    I.click(locate('.gridItem a').first())
 
     I.waitForElement('#likeButton', 10)
     I.seeElement('#likeButton')
