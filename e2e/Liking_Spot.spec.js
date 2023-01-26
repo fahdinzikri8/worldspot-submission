@@ -7,7 +7,7 @@ Scenario('Liking a spot', async ({ I }) => {
     I.amOnPage('/')
     I.waitForElement('.gridItem', 10)
     I.seeElement('.gridItem')
-    const firstRestoName = await I.grabTextForm(locate('.gridItem').first())
+    const firstRestoName = await I.grabTextFrom(locate('.gridItem').first())
     I.click(locate('.gridItem').first())
 
     I.waitForElement('#likeButton', 10)
@@ -17,7 +17,7 @@ Scenario('Liking a spot', async ({ I }) => {
     I.amOnPage('#/favorites')
     I.waitForElement('.gridList', 10)
     I.seeElement('.gridList')
-    const likedRestoName = await I.grabTextForm(locate('.gridItem').first())
+    const likedRestoName = await I.grabTextFrom(locate('.gridItem').first())
     
     assert.strictEqual(firstRestoName, likedRestoName)
     

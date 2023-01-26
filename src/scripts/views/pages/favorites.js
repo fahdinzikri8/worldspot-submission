@@ -14,7 +14,7 @@ const Like = {
   async afterRender() {
     const spot = await FavoriteSpotIdb.getAllSpot();
     const spotContainer = document.querySelector('#gridList');
-    if (spot.length === 0) {
+    if (spot == null || spot.length == 0) {
       spotContainer.innerHTML += `
       <div class="handle_favorite">
         <span>You have no favorites</span>

@@ -18,5 +18,5 @@ Scenario('Unliking a resto', ({I}) => {
     I.click('#likeButton')
 
     I.amOnPage('/#/favorites')
-    I.seeElement('.noData')
+    I.seeElement('.handle_favorite')
 })  
